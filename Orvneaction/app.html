@@ -1,0 +1,414 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="color-scheme" content="light">
+    <meta name="description" content="Privacy Policy and Technical Support">
+    <title>Privacy Policy</title>
+    <script>
+      // Edit these values to update every matching place on the page.
+      const SITE_CONFIG = {
+        appName: "Orvneaction",
+        ownerName: "Sayın Kasper Grevink",
+        emailLabel: "Email",
+        email: "kaspergrevink@outlook.com",
+        phoneLabel: "Phone",
+        phone: "+17404823822",
+        countryLabel: "Country or region",
+        country: "Netherlands",
+        effectiveDate: "2026-10-02"
+      };
+    </script>
+    <link rel="icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNk+A8AAQUBAScY42YAAAAASUVORK5CYII=">
+    <style>
+      :root {
+        color: #1f2933;
+        background: #f7f8fa;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+        font-synthesis: none;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        min-width: 320px;
+        margin: 0;
+        line-height: 1.65;
+      }
+
+      a {
+        color: #1261a0;
+      }
+
+      .site-header {
+        position: sticky;
+        top: 0;
+        z-index: 10;
+        display: flex;
+        align-items: center;
+        min-height: 64px;
+        padding: 0 32px;
+        border-bottom: 1px solid #dfe3e8;
+        background: rgba(255, 255, 255, 0.96);
+        box-shadow: 0 1px 5px rgba(31, 41, 51, 0.05);
+      }
+
+      .brand {
+        margin-right: auto;
+        color: #18212b;
+        font-size: 18px;
+        font-weight: 700;
+        text-decoration: none;
+      }
+
+      nav {
+        align-self: stretch;
+        display: flex;
+        gap: 8px;
+      }
+
+      nav button {
+        position: relative;
+        min-width: 88px;
+        padding: 0 16px;
+        border: 0;
+        background: transparent;
+        color: #52606d;
+        font: inherit;
+        font-weight: 600;
+        cursor: pointer;
+      }
+
+      nav button::after {
+        position: absolute;
+        right: 16px;
+        bottom: 0;
+        left: 16px;
+        height: 3px;
+        border-radius: 3px 3px 0 0;
+        background: #1261a0;
+        content: "";
+        opacity: 0;
+        transform: scaleX(0.5);
+        transition: opacity 160ms ease, transform 160ms ease;
+      }
+
+      nav button:hover {
+        color: #18212b;
+        background: #f4f6f8;
+      }
+
+      nav button.active {
+        color: #1261a0;
+      }
+
+      nav button.active::after {
+        opacity: 1;
+        transform: scaleX(1);
+      }
+
+      nav button:focus-visible,
+      a:focus-visible {
+        outline: 3px solid rgba(18, 97, 160, 0.28);
+        outline-offset: 2px;
+      }
+
+      main {
+        width: min(860px, calc(100% - 40px));
+        margin: 0 auto;
+        padding: 64px 0 80px;
+      }
+
+      .page[hidden] {
+        display: none;
+      }
+
+      .page-heading {
+        padding-bottom: 32px;
+        border-bottom: 1px solid #dfe3e8;
+      }
+
+      .product-name {
+        margin: 0 0 8px;
+        color: #1261a0;
+        font-size: 14px;
+        font-weight: 700;
+        text-transform: uppercase;
+      }
+
+      h1 {
+        margin: 0;
+        color: #18212b;
+        font-size: clamp(32px, 6vw, 48px);
+        line-height: 1.15;
+        letter-spacing: 0;
+      }
+
+      .effective-date {
+        margin: 14px 0 0;
+        color: #68737d;
+        font-size: 14px;
+      }
+
+      .lead {
+        max-width: 700px;
+        margin: 20px 0 0;
+        color: #44515d;
+        font-size: 18px;
+      }
+
+      article {
+        padding-top: 10px;
+      }
+
+      section {
+        padding: 28px 0;
+        border-bottom: 1px solid #e3e7eb;
+      }
+
+      h2 {
+        margin: 0 0 12px;
+        color: #26323d;
+        font-size: 22px;
+        line-height: 1.35;
+        letter-spacing: 0;
+      }
+
+      p {
+        margin: 10px 0 0;
+      }
+
+      dl {
+        margin: 16px 0 0;
+      }
+
+      dl div {
+        display: grid;
+        grid-template-columns: 170px minmax(0, 1fr);
+        gap: 20px;
+        padding: 12px 0;
+        border-bottom: 1px solid #e8ebee;
+      }
+
+      dl div:last-child {
+        border-bottom: 0;
+      }
+
+      dt {
+        color: #52606d;
+        font-weight: 600;
+      }
+
+      dd {
+        min-width: 0;
+        margin: 0;
+        overflow-wrap: anywhere;
+      }
+
+      footer {
+        padding: 28px 20px;
+        border-top: 1px solid #dfe3e8;
+        background: #fff;
+        color: #68737d;
+        font-size: 14px;
+        text-align: center;
+      }
+
+      @media (max-width: 600px) {
+        .site-header {
+          min-height: 58px;
+          padding: 0 14px;
+        }
+
+        .brand {
+          font-size: 16px;
+        }
+
+        nav {
+          gap: 0;
+        }
+
+        nav button {
+          min-width: 72px;
+          padding: 0 9px;
+          font-size: 14px;
+        }
+
+        nav button::after {
+          right: 9px;
+          left: 9px;
+        }
+
+        main {
+          width: min(100% - 32px, 860px);
+          padding: 42px 0 56px;
+        }
+
+        dl div {
+          grid-template-columns: 1fr;
+          gap: 2px;
+        }
+      }
+
+      @media (prefers-reduced-motion: reduce) {
+        * {
+          scroll-behavior: auto !important;
+          transition: none !important;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="#privacy" data-page-link="privacy" data-config="appName"></a>
+      <nav aria-label="Legal pages" role="tablist">
+        <button id="privacy-tab" class="active" type="button" role="tab" aria-selected="true" aria-controls="privacy" data-page="privacy">Privacy</button>
+        <button id="support-tab" type="button" role="tab" aria-selected="false" aria-controls="support" data-page="support">Support</button>
+      </nav>
+    </header>
+
+    <main>
+      <div id="privacy" class="page" role="tabpanel" aria-labelledby="privacy-tab">
+        <header class="page-heading">
+          <p class="product-name" data-config="appName"></p>
+          <h1>Privacy Policy</h1>
+          <p class="effective-date">Effective date: <span data-config="effectiveDate"></span></p>
+          <p class="lead"><span data-config="ownerName"></span> provides <span data-config="appName"></span>. This policy explains how the app handles information.</p>
+        </header>
+        <article>
+          <section>
+            <h2>Information handling</h2>
+            <p>The app does not transmit personal data to the developer. Content created in the app is stored locally on the device and remains under the user's control.</p>
+            <p>The app does not require an account and does not maintain a developer-operated user profile.</p>
+          </section>
+          <section>
+            <h2>Analytics, advertising and online services</h2>
+            <p>The app does not use advertising, cross-app tracking, analytics, crash-reporting or cloud-sync services.</p>
+          </section>
+          <section>
+            <h2>Device permissions</h2>
+            <p>The app may request the camera, the photo library. Permission is used only when the related feature is selected and can be changed in iOS Settings.</p>
+          </section>
+          <section>
+            <h2>Third-party services</h2>
+            <p>No third-party service receives personal data from the app.</p>
+          </section>
+          <section>
+            <h2>Retention and deletion</h2>
+            <p>Locally stored content remains on the device until the user deletes it in the app or removes the app. Removing the app normally removes its local data.</p>
+          </section>
+          <section>
+            <h2>Children</h2>
+            <p>The app is not directed to children under 13 and the developer does not knowingly collect personal information from children.</p>
+          </section>
+          <section>
+            <h2>Security</h2>
+            <p>Reasonable administrative and technical safeguards are used where information is processed. No storage or transmission method can be guaranteed to be completely secure.</p>
+          </section>
+          <section>
+            <h2>Changes to this policy</h2>
+            <p>This policy may be updated when the app or its data practices change. The effective date above identifies the current version.</p>
+          </section>
+          <section>
+            <h2>Contact</h2>
+            <p>Questions about privacy or data handling can be sent to:</p>
+            <dl>
+              <div><dt data-config="emailLabel"></dt><dd><a data-config="email" data-email-link></a></dd></div>
+              <div><dt data-config="phoneLabel"></dt><dd data-config="phone"></dd></div>
+              <div><dt data-config="countryLabel"></dt><dd data-config="country"></dd></div>
+            </dl>
+          </section>
+        </article>
+      </div>
+
+      <div id="support" class="page" role="tabpanel" aria-labelledby="support-tab" hidden>
+        <header class="page-heading">
+          <p class="product-name" data-config="appName"></p>
+          <h1>Technical Support</h1>
+          <p class="effective-date">Effective date: <span data-config="effectiveDate"></span></p>
+          <p class="lead">Use the contact details below for help with <span data-config="appName"></span>.</p>
+        </header>
+        <article>
+          <section>
+            <h2>Contact</h2>
+            <dl>
+              <div><dt data-config="emailLabel"></dt><dd><a data-config="email" data-email-link></a></dd></div>
+              <div><dt data-config="phoneLabel"></dt><dd data-config="phone"></dd></div>
+              <div><dt data-config="countryLabel"></dt><dd data-config="country"></dd></div>
+              <div><dt>Typical response time</dt><dd>2 business days</dd></div>
+            </dl>
+          </section>
+          <section>
+            <h2>What to include</h2>
+            <p>Include the app name, app version, iOS version and a clear description of the issue. Screenshots may be included when they do not expose sensitive information.</p>
+            <p>Do not send passwords, payment information or other unnecessary sensitive data.</p>
+          </section>
+          <section>
+            <h2>Privacy and data requests</h2>
+            <p>Privacy questions and valid access or deletion requests can be sent to the same support email. Identity verification may be required before a request is completed.</p>
+          </section>
+          <section>
+            <h2>Before contacting support</h2>
+            <p>Update the app and iOS, restart the app, confirm available storage, and repeat the action that caused the issue.</p>
+          </section>
+        </article>
+      </div>
+    </main>
+
+    <footer>&copy; 2026 <span data-config="ownerName"></span></footer>
+
+    <script>
+      const pageNames = new Set(["privacy", "support"]);
+      const tabs = document.querySelectorAll("[data-page]");
+      const pages = document.querySelectorAll(".page");
+
+      document.querySelectorAll("[data-config]").forEach((element) => {
+        element.textContent = SITE_CONFIG[element.dataset.config];
+      });
+
+      document.querySelectorAll("[data-email-link]").forEach((link) => {
+        link.href = `mailto:${SITE_CONFIG.email}`;
+      });
+
+      document.querySelector('meta[name="description"]').content =
+        `Privacy Policy and Technical Support for ${SITE_CONFIG.appName}`;
+
+      function showPage(pageName, updateHash = true) {
+        const selectedPage = pageNames.has(pageName) ? pageName : "privacy";
+
+        pages.forEach((page) => {
+          page.hidden = page.id !== selectedPage;
+        });
+
+        tabs.forEach((tab) => {
+          const active = tab.dataset.page === selectedPage;
+          tab.classList.toggle("active", active);
+          tab.setAttribute("aria-selected", String(active));
+        });
+
+        document.title = selectedPage === "privacy"
+          ? `Privacy Policy - ${SITE_CONFIG.appName}`
+          : `Technical Support - ${SITE_CONFIG.appName}`;
+
+        if (updateHash && location.hash !== `#${selectedPage}`) {
+          history.pushState(null, "", `#${selectedPage}`);
+        }
+      }
+
+      tabs.forEach((tab) => {
+        tab.addEventListener("click", () => showPage(tab.dataset.page));
+      });
+
+      document.querySelector("[data-page-link]").addEventListener("click", (event) => {
+        event.preventDefault();
+        showPage(event.currentTarget.dataset.pageLink);
+      });
+
+      window.addEventListener("hashchange", () => showPage(location.hash.slice(1), false));
+      showPage(location.hash.slice(1), false);
+    </script>
+  </body>
+</html>
